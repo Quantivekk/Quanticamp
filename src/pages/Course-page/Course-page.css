@@ -1,0 +1,186 @@
+/* Course-page.css */
+
+.cp-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  padding-bottom: 50px;
+}
+
+/* Hero Section */
+.cp-hero {
+  background: linear-gradient(to right, #4f46e5, #6d28d9);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cp-hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.cp-hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cp-search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cp-search-box {
+  background: white;
+  border-radius: 8px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.cp-search-icon {
+  margin-right: 10px;
+  color: #6b7280;
+}
+
+.cp-search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* Courses Section */
+.cp-courses-section {
+  padding: 40px 20px;
+}
+
+.cp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cp-section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cp-section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cp-section-subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Courses Grid */
+.cp-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.cp-course-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.cp-course-card:hover {
+  transform: translateY(-5px);
+}
+
+.cp-card-image {
+  position: relative;
+}
+
+.cp-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cp-level-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+}
+
+.level-beginner {
+  background-color: #10b981;
+}
+
+.level-intermediate {
+  background-color: #f59e0b;
+}
+
+.level-advanced {
+  background-color: #ef4444;
+}
+
+.cp-card-content {
+  padding: 20px;
+}
+
+.cp-course-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.cp-course-description {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 15px;
+}
+
+.cp-course-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.cp-stat {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cp-enroll-button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cp-enroll-button:hover {
+  background-color: #4338ca;
+}
+
+/* No Results */
+.cp-no-results {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #9ca3af;
+}

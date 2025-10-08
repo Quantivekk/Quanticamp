@@ -1,0 +1,579 @@
+/* ===============================
+   FOOTER SECTION STYLES
+   =============================== */
+
+/* Main Footer Container */
+.footer {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  color: white;
+  padding: 4rem 2rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.dark .footer {
+  background: #000000;
+  color: #d1d5db;
+}
+
+/* Subtle background pattern */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 25% 75%, rgba(34, 197, 94, 0.05) 0%, transparent 50%),
+                    radial-gradient(circle at 75% 25%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+/* ===============================
+   FOOTER GRID LAYOUT
+   =============================== */
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1.4fr;
+  gap: 6rem;
+  margin-bottom: 3rem;
+  align-items: start;
+}
+
+/* Individual Footer Columns */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===============================
+   COMPANY INFO SECTION
+   =============================== */
+
+.company-info {
+  padding-right: 2rem;
+}
+
+/* Company Logo */
+.company-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.company-logo:hover {
+  transform: scale(1.02);
+}
+
+.company-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ff04f2;
+  text-shadow: 0 2px 4px rgba(255, 4, 242, 0.3);
+}
+
+/* Mission Statement */
+.mission-text h4 {
+  color: #f8fafc;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+}
+
+.mission-text p {
+  color: #e2e8f0;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* ===============================
+   FOOTER HEADINGS
+   =============================== */
+
+.footer-heading {
+  color: #f8fafc;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  letter-spacing: -0.025em;
+}
+
+/* ===============================
+   FOOTER LINKS
+   =============================== */
+.footer-links {
+  padding: 0;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  margin: 0;
+  text-align: left;
+}
+
+.footer-links h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1px;
+  text-align: left;
+}
+
+.footer-links li {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.footer-link {
+  background: none;
+  border: none;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  line-height: 1.5;
+  text-align: left;
+  position: relative;
+  width: 100%;
+  font-weight: 400;
+  display: block;
+}
+
+.footer-link:hover {
+  color: #f1f5f9;
+}
+
+/* ===============================
+   CONTACT INFO STYLES
+   =============================== */
+
+.contact-info {
+  color: #e2e8f0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Contact Item Layout */
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+  color: #ff04f2;
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+/* Contact Sections */
+.contact-section {
+  margin-bottom: 2rem;
+}
+
+.section-title2 {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #f1f5f9;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Contact Address */
+.contact-address {
+  font-style: normal;
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Phone Numbers */
+.phone-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.phone-number {
+  color: #e2e8f0;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.phone-number:hover {
+  color: #ff04f2;
+  text-decoration: underline;
+}
+
+/* Email Addresses */
+.email-addresses {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.email {
+  color: #e2e8f0;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.email:hover {
+  color: #ff04f2;
+  text-decoration: underline;
+}
+
+/* Send Message Link */
+.message-link {
+  margin-top: 2rem;
+}
+
+.send-message-link {
+  background: linear-gradient(135deg, #ff04f2, #a31689);
+  color: white;
+  border: none;
+  padding: 0.875rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.send-message-link:hover {
+  background: linear-gradient(135deg, #a31689, #7e1580);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 4, 242, 0.3);
+}
+
+/* ===============================
+   SOCIAL MEDIA LINKS
+   =============================== */
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #475569;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(197, 34, 145, 0.1);
+  border: 2px solid transparent;
+  border-radius: 50%;
+  color: #ff04f2;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #ff04f2;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.social-link:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.social-link:hover {
+  color: white;
+  border-color: #ff04f2;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(197, 34, 165, 0.4);
+}
+
+/* ===============================
+   FOOTER BOTTOM
+   =============================== */
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  padding-top: 2rem;
+  border-top: 1px solid #475569;
+}
+
+.copyright p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Legal Links */
+.footer-legal {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.legal-link {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.legal-link:hover {
+  color: #ff04f2;
+  background: rgba(255, 4, 242, 0.1);
+}
+
+.separator {
+  color: #64748b;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+   =============================== */
+
+/* Large Tablet */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 3.5rem 1.5rem 2rem;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  
+  .company-info {
+    grid-column: 1 / -1;
+    padding-right: 0;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 1rem 2rem;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .company-info {
+    grid-column: auto;
+    text-align: left;
+  }
+  
+  .footer-links {
+    text-align: left;
+  }
+  
+  .contact-info {
+    text-align: left;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .social-media {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .footer {
+    padding: 2.5rem 0.75rem 1.5rem;
+  }
+  
+  .footer-grid {
+    gap: 2rem;
+  }
+  
+  .company-logo {
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  
+  .company-name {
+    font-size: 1.5rem;
+  }
+  
+  .footer-heading {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  
+  .mission-text h4 {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  
+  .contact-item {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .social-media {
+    gap: 1rem;
+  }
+  
+  .social-link {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .footer-legal {
+    justify-content: center;
+  }
+}
+
+/* ===============================
+   ACCESSIBILITY ENHANCEMENTS
+   =============================== */
+
+/* Focus States */
+.footer-link:focus,
+.social-link:focus,
+.send-message-link:focus,
+.legal-link:focus,
+.phone-number:focus,
+.email:focus {
+  outline: 2px solid #ff04f2;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .footer {
+    background: #000;
+    border-top: 2px solid #ff04f2;
+  }
+  
+  .footer-heading,
+  .company-name,
+  .phone-number,
+  .email {
+    color: #ff04f2;
+  }
+  
+  .mission-text p,
+  .contact-info,
+  .footer-link {
+    color: #fff;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .company-logo,
+  .footer-link,
+  .social-link,
+  .send-message-link,
+  .legal-link,
+  .phone-number,
+  .email,
+  .social-link::before {
+    transition: none;
+  }
+  
+  .social-link:hover,
+  .send-message-link:hover {
+    transform: none;
+  }
+}
+
+/* ===============================
+   PRINT STYLES
+   =============================== */
+
+@media print {
+  .footer {
+    background: white;
+    color: black;
+    padding: 1rem 0;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .social-media {
+    display: none;
+  }
+  
+  .company-name,
+  .footer-heading,
+  .phone-number,
+  .email {
+    color: black;
+  }
+  
+  .mission-text p,
+  .contact-info {
+    color: #333;
+  }
+}
