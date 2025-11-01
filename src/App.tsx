@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 
 import Home from "./pages/Home-page/Homepage.jsx";
-import About from "./pages/About-page/About-page.jsx";
+//import About from "./pages/About-page/About-page.jsx";//
 import Contact from "./pages/Contact-page/Contact-page.jsx";
 import CoursesPage from "./pages/Course-page/Course-page.jsx";
 
@@ -34,7 +34,7 @@ const App = () => {
           
           {/* Main routes - lowercase for consistency */}
           <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          {/* <Route path="/about" element={<About />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/courses" element={<CoursesPage />} />
           

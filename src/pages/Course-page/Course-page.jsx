@@ -196,7 +196,7 @@ const CoursePage = () => {
                     </div>
                     <div className="cp-stat">
                       <Users size={16} />
-                      <span>{course.students.toLocaleString()}</span>
+                      <span>{course.students.toLocaleString("en-US")}</span>
                     </div>
                     <div className="cp-stat">
                       <Star size={16} />

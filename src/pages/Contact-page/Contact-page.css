@@ -1,0 +1,343 @@
+/* Global container for the entire about page */
+.about4-container {
+  width: 100%;
+  min-height: 100vh;
+  /* Light mode background color */
+  background-color: #ffffff;
+}
+
+/* Dark mode styling for the entire container */
+.dark .about4-container {
+  /* Dark mode background color */
+  background-color: #1a1a1a;
+}
+
+/* ============================================
+   HERO SECTION STYLES
+   ============================================ */
+
+/* Hero section wrapper - full width banner area with purple gradient */
+.hero4-section {
+  /* Purple gradient background for light mode */
+  background: linear-gradient(135deg, #9333ea 0%, #7e22ce 100%);
+  padding: 100px 20px;
+  text-align: center;
+  /* White text color */
+  color: white;
+}
+
+/* Dark mode hero section - keeps same gradient */
+.dark .hero4-section {
+  /* Darker purple gradient for dark mode */
+  background: linear-gradient(135deg, #7e22ce 0%, #6b21a8 100%);
+}
+
+/* Content wrapper for hero section */
+.hero4-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main heading in hero section */
+.hero4-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  /* White text in light mode */
+  color: white;
+}
+
+/* Dark mode title - stays white for contrast */
+.dark .hero4-title {
+  color: white;
+}
+
+/* Subtitle/tagline in hero section */
+.hero4-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  /* White text with slight transparency */
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Dark mode subtitle */
+.dark .hero4-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================
+   FEATURES SECTION STYLES
+   ============================================ */
+
+/* Features section wrapper */
+.features4-section {
+  padding: 80px 20px;
+  /* Light gray background for light mode */
+  background-color: #ffffff;
+}
+
+/* Dark mode features section background */
+.dark .features4-section {
+  background-color: #1a1a1a;
+}
+
+/* Grid layout for feature cards - 4 columns on desktop */
+.features4-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  /* Negative margin to pull cards up into hero section */
+  margin-top: -60px;
+}
+
+/* Individual feature card styling */
+.feature4-card {
+  /* White background for light mode */
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  /* Subtle shadow for depth */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  /* Smooth transition for hover effects */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature4-card::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 12px;
+  z-index: -1;
+  border: 2px solid transparent;
+  background-position: left bottom;
+  transform-origin: left bottom;
+  transition: all 400ms ease;
+}
+/* Dark mode feature card */
+.dark .feature4-card {
+  /* Dark gray background */
+  background: #2d2d2d;
+  /* Lighter shadow for dark mode */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.feature4-card:hover::before{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #7300ff;
+}
+/* Hover effect for feature cards - lifts card up */
+.feature4-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode hover effect */
+.dark .feature4-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Icon container in feature cards */
+.feature4-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Feature card heading */
+.feature4-heading {
+  font-size: 1.4rem;
+  /* Dark text for light mode */
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Dark mode feature heading */
+.dark .feature4-heading {
+  /* Light text for dark mode */
+  color: #ffffff;
+}
+
+/* Feature card description text */
+.feature4-description {
+  font-size: 1rem;
+  /* Gray text for light mode */
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Dark mode feature description */
+.dark .feature4-description {
+  /* Lighter gray for dark mode */
+  color: #9ca3af;
+}
+
+/* ============================================
+   CALL TO ACTION SECTION STYLES
+   ============================================ */
+
+/* CTA section wrapper */
+.cta4-section {
+  padding: 100px 20px;
+  /* Dark blue/navy background for light mode */
+  background-color: #374151;
+  text-align: center;
+}
+
+/* Dark mode CTA section */
+.dark .cta4-section {
+  /* Darker background for dark mode */
+  background-color: #111827;
+}
+
+/* Content wrapper for CTA section */
+.cta4-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* CTA section main heading */
+.cta4-title {
+  font-size: 2.5rem;
+  /* White text for contrast */
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* Dark mode CTA title - stays white */
+.dark .cta4-title {
+  color: #ffffff;
+}
+
+/* Primary CTA button styling */
+.cta4-button {
+  /* Green background matching the image */
+  background-color: #ba22c5;
+  /* White text */
+  color: white;
+  padding: 18px 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  /* Smooth transition for hover effects */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Remove underline from link */
+  text-decoration: none;
+  /* Display as inline block for padding */
+  display: inline-block;
+}
+
+/* Dark mode CTA button - same green */
+.dark .cta4-button {
+  background-color: #ba22c5;
+}
+
+/* Hover effect for CTA button */
+.cta4-button:hover {
+  /* Darker green on hover */
+  background-color: #ba22c5;
+  /* Slight lift effect */
+  transform: translateY(-2px);
+}
+
+/* Dark mode hover effect */
+.dark .cta4-button:hover {
+  background-color: #ba22c5;
+}
+
+/* Active/pressed state for CTA button */
+.cta4-button:active {
+  transform: translateY(0);
+}
+
+/* ============================================
+   RESPONSIVE STYLES FOR MOBILE DEVICES
+   ============================================ */
+
+/* Tablet and below adjustments */
+@media (max-width: 768px) {
+  /* Reduce hero title size on mobile */
+  .hero4-title {
+    font-size: 2.2rem;
+  }
+
+  /* Reduce hero subtitle size on mobile */
+  .hero4-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Reduce CTA title size on mobile */
+  .cta4-title {
+    font-size: 2rem;
+  }
+
+  /* Reduce padding on hero section for mobile */
+  .hero4-section {
+    padding: 60px 20px;
+  }
+
+  /* Reduce padding on features section for mobile */
+  .features4-section {
+    padding: 60px 20px;
+  }
+
+  /* Adjust grid margin for mobile */
+  .features4-grid {
+    margin-top: -40px;
+  }
+
+  /* Reduce padding on CTA section for mobile */
+  .cta4-section {
+    padding: 60px 20px;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  /* Further reduce hero title on small screens */
+  .hero4-title {
+    font-size: 1.8rem;
+  }
+
+  /* Reduce hero subtitle font size */
+  .hero4-subtitle {
+    font-size: 0.95rem;
+  }
+
+  /* Reduce CTA button padding on small screens */
+  .cta4-button {
+    padding: 15px 35px;
+    font-size: 1rem;
+  }
+
+  /* Reduce feature card padding on small screens */
+  .feature4-card {
+    padding: 30px 20px;
+  }
+
+  /* Reduce feature heading size */
+  .feature4-heading {
+    font-size: 1.2rem;
+  }
+
+  /* Reduce feature description size */
+  .feature4-description {
+    font-size: 0.9rem;
+  }
+}
